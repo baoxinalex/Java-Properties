@@ -11,19 +11,19 @@ import java.util.Properties;
 public class Main {
 
     //create properties value and create& write into xyz.properties text file
-    public static void main2 (String[] args) throws Exception
-    {
-        Properties props = new Properties();
+//     public static void main (String[] args) throws Exception
+//     {
+//         Properties props = new Properties();
 
-        props.put("displayName", "Jim");
-        props.put("stageName", "Jimmy");
-        props.put("realName", "James");
-        String name = props.getProperty("realName");
+//         props.put("displayName", "Jim");
+//         props.put("stageName", "Jimmy");
+//         props.put("realName", "James");
+//         String name = props.getProperty("realName");
 
-        try (Writer writer = Files.newBufferedWriter(Paths.get("xyz.properties"))){
-            props.store(writer,"My Comment2");
-        }
-    }
+//         try (Writer writer = Files.newBufferedWriter(Paths.get("xyz.properties"))){
+//             props.store(writer,"My Comment2");
+//         }
+//     }
 
     public static void main(String[] args) throws IOException {
         Properties prop = new Properties();
